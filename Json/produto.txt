@@ -1,0 +1,93 @@
+[
+    {
+        "produto": "Smartphone",
+        "marca": "Samsung",
+        "modelo": "Galaxy S22 Ultra",
+        "lançamento": 2024,
+        "categoria": "Celular",
+        "preço": "$1,199",
+        "características": ["Tela AMOLED de 6.8 polegadas", "Câmera de 108 MP", "Snapdragon 8 Gen 2"]
+    },
+    {
+        "produto": "Laptop",
+        "marca": "Apple",
+        "modelo": "MacBook Pro 14",
+        "lançamento": 2023,
+        "categoria": "Computador Portátil",
+        "preço": "$1,999",
+        "características": ["Chip M1 Pro", "Tela Retina XDR de 14 polegadas", "Até 32 GB de RAM"]
+    },
+    {
+        "produto": "Fones de Ouvido",
+        "marca": "Sony",
+        "modelo": "WH-1000XM5",
+        "lançamento": 2020,
+        "categoria": "Áudio",
+        "preço": "$349",
+        "características": ["Cancelamento de ruído", "30 horas de bateria", "Conexão Bluetooth"]
+    },
+    {
+        "produto": "Smartwatch",
+        "marca": "Apple",
+        "modelo": "Apple Watch Series 7",
+        "lançamento": 2021,
+        "categoria": "Dispositivo Vestível",
+        "preço": "$399",
+        "características": ["Tela sempre ativa", "Sensor de oxigênio no sangue", "Resistente à água"]
+    },
+    {
+        "produto": "Console de Videogame",
+        "marca": "Sony",
+        "modelo": "PlayStation 5",
+        "lançamento": 2020,
+        "categoria": "Videogame",
+        "preço": "$499",
+        "características": ["Gráficos 4K", "SSD ultrarrápido", "Controle DualSense"]
+    },
+    {
+        "produto": "Câmera Mirrorless",
+        "marca": "Canon",
+        "modelo": "EOS R5",
+        "lançamento": 2020,
+        "categoria": "Fotografia",
+        "preço": "$3,899",
+        "características": ["Sensor CMOS de 45 MP", "Gravação de vídeo 8K", "Estabilização de imagem integrada"]
+    },
+    {
+        "produto": "Roteador Wi-Fi",
+        "marca": "TP-Link",
+        "modelo": "Archer AX6000",
+        "lançamento": 2019,
+        "categoria": "Rede",
+        "preço": "$299",
+        "características": ["Wi-Fi 6", "Dual-Band", "Conexão para até 150 dispositivos"]
+    },
+    {
+        "produto": "Tablet",
+        "marca": "Microsoft",
+        "modelo": "Surface Pro 8",
+        "lançamento": 2021,
+        "categoria": "Tablet",
+        "preço": "$899",
+        "características": ["Processador Intel Core", "Tela PixelSense de 13 polegadas", "Até 16 GB de RAM"]
+    },
+    {
+        "produto": "Câmera de Segurança",
+        "marca": "Ring",
+        "modelo": "Ring Video Doorbell Pro 2",
+        "lançamento": 2021,
+        "categoria": "Segurança",
+        "preço": "$249",
+        "características": ["Resolução 1080p", "Visão noturna", "Detecção de movimento avançada"]
+    },
+    {
+        "produto": "Drone",
+        "marca": "DJI",
+        "modelo": "Mavic Air 2",
+        "lançamento": 2020,
+        "categoria": "Drones",
+        "preço": "$799",
+        "características": ["Câmera de 48 MP", "Voo até 34 minutos", "Evitamento de obstáculos"]
+    }
+]
+    
