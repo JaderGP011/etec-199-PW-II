@@ -1,37 +1,39 @@
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { engine } from 'express-handlebars';
+import fs from 'fs';
 
 const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Configuração do Handlebars
+app.engine('hbs', engine({ extname: '.hbs', defaultLayout: 'main' }));
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(__dirname));
 
-// Rotas estáticas para os arquivos HTML
+// Carregar notícias do arquivo JSON
+const noticias = JSON.parse(fs.readFileSync(path.join(__dirname, 'noticias.json'), 'utf8')).noticias;
+
+// Rota principal
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.render('index', { noticias });
 });
 
-app.get('/pag1.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'pag1.html'));
-});
+// Rota de notícia individual
+app.get('/noticia/:id', (req, res) => {
+    const id = parseInt(req.params.id, 10);
+    const noticia = noticias.find(n => n.id === id);
 
-app.get('/pag2.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'pag2.html'));
-});
-
-app.get('/pag3.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'pag3.html'));
-});
-
-app.get('/pag4.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'pag4.html'));
-});
-
-app.get('/pag5.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'pag5.html'));
+    if (noticia) {
+        res.render('noticia', noticia);
+    } else {
+        res.status(404).send('Notícia não encontrada');
+    }
 });
 
 const PORT = process.env.PORT || 3000;

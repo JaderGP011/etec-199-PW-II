@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ETEC Informa</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .sticky-topbar {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+        }
+        .main-carousel .position-relative {
+            width: 100vw !important;
+        }
+        .main-carousel .position-relative img {
+            width: 100vw !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main News Slider Start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-7 px-0">
+                <div class="owl-carousel main-carousel position-relative" style="margin-left: 0px; margin-right: 0px; padding: none; width:98.79vw;">
+                    {{#each noticias}}
+                    <div class="position-relative overflow-hidden" style="height: 500px;">
+                        <img class="img-fluid h-100" src="{{this.imagem}}" style="object-fit: cover;">
+                        <div class="overlay">
+                            <div class="mb-2">
+                                <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2" href="">{{this.categoria}}</a>
+                                <a class="text-white" href="">{{this.data}}</a>
+                            </div>
+                            <a class="h2 m-0 text-white text-uppercase font-weight-bold" href="/noticia/{{this.id}}">{{this.titulo}}</a>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main News Slider End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

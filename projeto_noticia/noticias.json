@@ -1,0 +1,33 @@
+{
+    "noticias": [
+      {
+        "id": 1,
+        "titulo": "Vaza gabarito da OBMEP no X",
+        "data": "30/04/2024",
+        "imagem": "https://th.bing.com/th/id/R.adb96bbc7f0eca26b5b728845c398dc6?rik=XJ4tEY7laqDfSw&riu=http%3a%2f%2fnoic.com.br%2fwp-content%2fuploads%2f2015%2f02%2fobmep.png&ehk=2PnmbiCDtL%2bTYzTKx%2bdArZttJKTNk35Hge2xFHQ8PeQ%3d&risl=&pid=ImgRaw&r=0",
+        "conteudo": "O gabarito da OBMEP vazou na plataforma X, e muitos estudantes já estão falando sobre o incidente."
+      },
+      {
+        "id": 2,
+        "titulo": "ETEC arrecada doações para o RS",
+        "data": "27/04/2024",
+        "imagem": "https://e360.yale.edu/assets/site/_1000xAUTO_stretch_center-center/flooding-caused-by-hurricane-harvey-in-southeast-texas-201946.jpg",
+        "conteudo": "A ETEC está arrecadando doações para ajudar as vítimas das enchentes no Rio Grande do Sul."
+      },
+      {
+        "id": 3,
+        "titulo": "Vini Jr e Carvajal levam o 15º Título para o Real Madrid",
+        "data": "02/05/2024",
+        "imagem": "https://f.i.uol.com.br/fotografia/2024/06/01/1717275099665b89dba41f2_1717275099_3x2_md.jpg",
+        "conteudo": "O Real Madrid conquistou o seu 15º título graças ao desempenho incrível de Vini Jr e Carvajal."
+      },
+      {
+        "id": 4,
+        "titulo": "Mbappé estreia pelo Real Madrid",
+        "data": "16/08/2024",
+        "imagem": "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3535368:1721161455/mbappe%201.jfif?f=16x9&$p$f=73fe434",
+        "conteudo": "Mbappé estreia pelo clube merengue a marca seu 1º gol"
+      }
+    ]
+  }
+  
